@@ -28,3 +28,19 @@ Advantages
     * The complex and time-consuming process of converting a legacy or an existing Spring project to a Spring Boot application;
     * Not suitable for large-scale projects. Although it’s great for working with microservices, many developers claim that Spring Boot is not suitable for building 
       monolithic applications.
+
+Ques - Difference between Spring and Spring Boot :
+                  Spring                                                     Spring Boot
+     * Spring is an open-source lightweight framework               * Spring Boot is built on top of the conventional spring framework,
+       widely used to develop enterprise applications.                widely used to develop REST APIs.
+     * The most important feature of the Spring Framework           * The most important feature of the Spring Boot is Auto configuration.
+       is dependency injection.	
+     * It helps to create a loosely coupled application.	        * It helps to create a stand-alone application.
+     * To run the Spring application, we need to set the            * Spring Boot provides embedded servers such as Tomcat and Jetty etc.
+       server explicitly.	
+     * To run the Spring application, a deployment                  * There is no requirement for a deployment descriptor.
+       descriptor is required.	
+     * To create a Spring application, the developers               * It reduces the lines of code.
+       write lots of code.	
+     * It doesn’t provide support for the in-memory                 * It provides support for the in-memory database such as H2.
+       database.	
