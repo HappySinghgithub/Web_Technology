@@ -6,9 +6,25 @@ Ques - What is SpringBoot ?
     ( Spring Boot is the combination of Spring Framework and Embedded Servers )
     In Spring Boot, there is no requirement for XML configuration
 
+    Spring boot is an open source framework that can be used to build mobile and web applications with the help of micro services. This includes both Java applications 
+    and WAR deployments.
+    
 Ques - Why should we use Spring Boot Framework?
     We should use Spring Boot Framework because:
     - The dependency injection approach is used in Spring Boot.
     - It contains powerful database transaction management capabilities.
     - It simplifies integration with other Java frameworks like JPA/Hibernate ORM, Struts, etc.
     - It reduces the cost and development time of the application.
+
+Advantages
+    * Spring boot offers an effortless way to create spring-based applications using JAVA or Groovy.
+    * Spring Boot minimizes the time spent in developing and increasing productivity.
+    * It helps in reducing all the manual work of writing annotations, boilerplate codes and XML configurations.
+    * Developers have easy access to Embedded HTTP servers such as Jetty, Tomcat
+    * It provides a plugin that has made working with embedded and in-memory databases very smoothly and readily.
+    
+ Disadvantages
+    * Lack of control. Spring Boot creates a lot of unused dependencies, resulting in a large deployment file;
+    * The complex and time-consuming process of converting a legacy or an existing Spring project to a Spring Boot application;
+    * Not suitable for large-scale projects. Although it’s great for working with microservices, many developers claim that Spring Boot is not suitable for building 
+      monolithic applications.
