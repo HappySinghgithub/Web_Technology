@@ -194,3 +194,21 @@ Ques - Spring Boot - Build Systems
 	methods cannot return ModelAndView. It is typically used in combination with annotated handler methods based on the @RequestMapping annotation.
 	The ResponseEntity class represents an HTTP response, including headers, body, and status. It is used to return data.
 	The @Controller annotation is used with the view technology
+
+ Ques - Request Mapping
+ 	@RequestMapping is the most common and widely used annotation in Spring MVC. It is used to map web requests onto specific handler classes and/or handler 
+	methods. @RequestMapping can be applied to the controller class as well as methods.
+	It has the following optional options
+		name: Assign a name to this mapping.
+		value:  The primary mapping expressed by this annotation.
+		method: The HTTP request methods to map to
+		headers: The headers of the mapped request, narrowing the primary mapping.
+ 	@Controller
+	@RequestMapping("/users")
+	public class UserController {
+		@RequestMapping("/user")
+		public String getUser() {
+	 	}
+	}
+	A @RequestMapping on the class level is not required. Without it, all paths are simply absolute, and not relative.
+ 
