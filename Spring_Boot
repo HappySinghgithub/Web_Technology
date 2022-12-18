@@ -212,3 +212,5 @@ Ques - Spring Boot - Build Systems
 	}
 	A @RequestMapping on the class level is not required. Without it, all paths are simply absolute, and not relative.
  
+Ques - Request Body
+	https://bushansirgur.in/spring-boot-requestbody-annotation-example/
