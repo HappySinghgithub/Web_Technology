@@ -169,7 +169,7 @@ Ques - Spring Boot - Build Systems
   Ques - 
   	Spring Boot uses Apache Commons logging for all internal logging. Spring Boot’s default configurations provides a support for the use of Java Util Logging, 
 	Log4j2, and Logback. Using these, we can configure the console logging as well as file logging.
-	If you are using Spring Boot Starters, Logback will provide a good support for logging. Besides, Logback also provides a use of good support for Common Logging,😊😊😊
+	If you are using Spring Boot Starters, Logback will provide a good support for logging. Besides, Logback also provides a use of good support for Common Logging,
 	Util Logging, Log4J, and SLF4J
 
  Ques - RESTful Web Services
@@ -187,5 +187,10 @@ Ques - Spring Boot - Build Systems
 	- It can be written in any programming language and can be executed on any platform.
 	- It provides different data format like JSON, text, HTML, and XML.
 	- It is fast in comparison to SOAP because there is no strict specification like SOAP.
-	- These are reusable.
-	
+
+  Ques - Rest Controller
+  	@RestController is a convenience annotation for creating Restful controllers. It is a specialization of @Component and is autodetected through classpath 
+	scanning. It adds the @Controller and @ResponseBody annotations. It converts the response to JSON or XML. It does not work with the view technology, so the
+	methods cannot return ModelAndView. It is typically used in combination with annotated handler methods based on the @RequestMapping annotation.
+	The ResponseEntity class represents an HTTP response, including headers, body, and status. It is used to return data.
+	The @Controller annotation is used with the view technology
