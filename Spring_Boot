@@ -68,7 +68,13 @@ Ques - Difference between Spring and Spring Boot :
 	              }
                 }
         
-  Ques - 
+Ques - Spring Boot Auto-configuration
+	Spring Boot auto-configuration automatically configures the Spring application based on the jar dependencies that we have added.
+	For example, if the H2 database Jar is present in the classpath and we have not configured any beans related to the database manually, the Spring Boot's 
+	auto-configuration feature automatically configures it in the project.
+	We can enable the auto-configuration feature by using the annotation @EnableAutoConfiguration. But this annotation does not use because it is wrapped inside 
+	the @SpringBootApplication annotation. The annotation @SpringBootApplication is the combination of three annotations: @ComponentScan, @EnableAutoConfiguration,
+	and @Configuration. However, we use @SpringBootApplication annotation instead of using @EnableAutoConfiguration.
 
 
 
