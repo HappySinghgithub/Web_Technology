@@ -85,7 +85,7 @@ Ques - Spring Boot Actuator
 	- Metrics
 	- Audit
 	Endpoint: The actuator endpoints allows us to monitor and interact with the application. Spring Boot provides a number of built-in endpoints. We can also create
-		  our own endpoint. We can enable and disable each endpoint individually.
+	our own endpoint. We can enable and disable each endpoint individually.
 	Metrics:  Spring Boot Actuator provides dimensional metrics by integrating with the micrometer. The micrometer is integrated into Spring Boot.
 	Audit  :  Spring Boot provides a flexible audit framework that publishes events to an AuditEventRepository. It automatically publishes the authentication events
 		  if spring-security is in execution.
@@ -97,8 +97,28 @@ Ques - Spring Boot Actuator
     				<version>2.2.2.RELEASE</version>  
 			</dependency>  
 
-
-
-
-
+Ques - Spring Boot - Build Systems
+	Any software system needs a build system to generate a deployable artefact. For example, the artefact for java based applications can be JAR, WAR, or EAR. The
+	build tool helps in building the application and creating the artefact. Though many build tools exist in the market, maven and Gradle are popular.
+	when you upgrade the Spring Boot version, dependencies also will upgrade automatically.
+	1. Maven Dependency
+	For Maven configuration, we should inherit the Spring Boot Starter parent project to manage the Spring Boot Starters dependencies. For this, simply we can 
+	inherit the starter parent in our pom.xml file 
+			<parent>
+ 			  <groupId>org.springframework.boot</groupId>
+ 			  <artifactId>spring-boot-starter-parent</artifactId>
+  			  <version>1.5.8.RELEASE</version>
+			</parent>
+	We should specify the version number for Spring Boot Parent Starter dependency. Then for other starter dependencies, we do not need to specify the Spring Boot	
+	version number. Observe the code given below −
+			<dependencies>
+   				<dependency>
+      					<groupId>org.springframework.boot</groupId>
+      					<artifactId>spring-boot-starter-web</artifactId>
+   				</dependency>
+			</dependencies>
+			
+	2. Gradle Dependency
+	We can import the Spring Boot Starters dependencies directly into build.gradle file. We do not need Spring Boot start Parent dependency like Maven for Gradle.
+	
 
