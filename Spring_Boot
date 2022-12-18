@@ -165,3 +165,9 @@ Ques - Spring Boot - Build Systems
         			.forEach(System.out::println);
   			}
 		}
+
+  Ques - 
+  	Spring Boot uses Apache Commons logging for all internal logging. Spring Boot’s default configurations provides a support for the use of Java Util Logging, 
+	Log4j2, and Logback. Using these, we can configure the console logging as well as file logging.
+	If you are using Spring Boot Starters, Logback will provide a good support for logging. Besides, Logback also provides a use of good support for Common Logging, 
+	Util Logging, Log4J, and SLF4J
