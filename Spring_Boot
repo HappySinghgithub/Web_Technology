@@ -6,7 +6,7 @@ Ques - What is SpringBoot ?
     ( Spring Boot is the combination of Spring Framework and Embedded Servers )
     In Spring Boot, there is no requirement for XML configuration
 
-    Spring boot is an open source framework that can be used to build mobile and web applications with the help of micro services. This includes both Java applications 
+    Spring boot is an open source framework that can be used to build mobile and web applications with the help of micro services. This includes both Java applications
     and WAR deployments.
     
 Ques - Why should we use Spring Boot Framework?
@@ -44,3 +44,34 @@ Ques - Difference between Spring and Spring Boot :
        write lots of code.	
      * It doesn’t provide support for the in-memory                 * It provides support for the in-memory database such as H2.
        database.	
+       
+  Ques - Spring Boot Annotations
+        Spring Boot Annotations is a form of metadata that provides data about a program. In other words, annotations are used to provide supplemental information 
+        about a program. It is not a part of the application that we develop. It does not have a direct effect on the operation of the code they annotate. It does 
+        not change the action of the compiled program.
+        Spring annotations present in the org.springframework.boot.autoconfigure and org.springframework.boot.autoconfigure.condition packages are commonly known as
+        Spring Boot annotations. Some of the annotations that are available in this category are:
+        * @SpringBootApplication
+        * @SpringBootConfiguration
+        * @EnableAutoConfiguration
+        * @ComponentScan
+        
+        1. @SpringBootApplication Annotation
+            This annotation is used to mark the main class of a Spring Boot application. It encapsulates @SpringBootConfiguration, @EnableAutoConfiguration, and
+            @ComponentScan annotations with their default attributes.
+
+      Example - @SpringBootApplication
+                public class DemoApplication {
+	              public static void main(String[] args)
+	              {
+		             SpringApplication.run(DemoApplication.class, args);
+	              }
+                }
+        
+  Ques - 
+
+
+
+
+
+
