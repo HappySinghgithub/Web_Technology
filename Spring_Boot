@@ -35,7 +35,7 @@ Ques - Difference between Spring and Spring Boot :
        widely used to develop enterprise applications.                widely used to develop REST APIs.
      * The most important feature of the Spring Framework           * The most important feature of the Spring Boot is Auto configuration.
        is dependency injection.	
-     * It helps to create a loosely coupled application.	        * It helps to create a stand-alone application.
+     * It helps to create a loosely coupled application.	    * It helps to create a stand-alone application.
      * To run the Spring application, we need to set the            * Spring Boot provides embedded servers such as Tomcat and Jetty etc.
        server explicitly.	
      * To run the Spring application, a deployment                  * There is no requirement for a deployment descriptor.
@@ -121,4 +121,24 @@ Ques - Spring Boot - Build Systems
 	2. Gradle Dependency
 	We can import the Spring Boot Starters dependencies directly into build.gradle file. We do not need Spring Boot start Parent dependency like Maven for Gradle.
 	
+ Ques - Spring Boot – Code Structure
+ 	There is no specific layout or code structure for Spring Boot Projects. However, there are some best practices followed by developers that will help us too. 
+	You can divide your project into layers like service layer, entity layer, repository layer, etc. You can also divide the project into modules. For example, the
+	parent project has two child modules. The first module is for the data layer and the second module is for the web layer. You can also divide the project into
+	features.
+	It is not a best practice to include a class in the default package. It is because Spring scans the classes in packages and sub-packages mentioned in the 
+	annotations like @ComponentScan, @EntityScan, @SpringBootApplication etc. 
+	Two approaches that are typically used by most developers to structure their spring boot projects.
+	- Structure by Feature
+		In this approach, all classes pertaining to a certain feature are placed in the same package.
+	- Structure by Layer
+		Another way to place the classes is by layer i.e; all controllers can be placed in controllers package and services under services package and all 
+		entities under domain or model etc.
+	Example
+			@SpringBootApplication
+			public class MyApplication {
+			public static void main(String[] args) {
+        		SpringApplication.run(MyApplication.class, args);
+    			  }
+			}
 
