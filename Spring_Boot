@@ -213,4 +213,8 @@ Ques - Spring Boot - Build Systems
 	A @RequestMapping on the class level is not required. Without it, all paths are simply absolute, and not relative.
  
 Ques - Request Body
-	https://bushansirgur.in/spring-boot-requestbody-annotation-example/
+	@RequestBody annotation is used to indicating a method parameter should be bind to the body of the HTTP request. Internally, this annotation uses HTTP Message
+	converters to convert the body of HTTP requests to domain objects.
+	@PostMapping("/users")
+	public void printData(@RequestBody User user) {
+	}
